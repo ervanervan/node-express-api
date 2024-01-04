@@ -32,4 +32,11 @@ router.post('/', (req, res) => {
     res.send(`User with the name ${user.firstName} added to the database!`);
 })
 
+router.get('/:id', (req, res) => {
+
+})
+
+
+
+
 export default router;
