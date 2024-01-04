@@ -6,4 +6,8 @@ const PORT = 5000;
 
 app.use(bodyParser.json());
 
-app.listen(PORT, () => console.log(`Server Running on port: http://localhost:${PORT}`))
+app.get('/', (req, res) => {
+    res.send("Helo from Homepage");
+});
+
+app.listen(PORT, () => console.log(`Server Running on port: http://localhost:${PORT}`));
